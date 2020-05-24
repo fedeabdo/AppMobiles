@@ -1,0 +1,101 @@
+
+table{
+    width: 100%;
+    margin-top: 20px;
+  }
+html, body{
+  height: 100%;
+  width: 100%;
+}
+  table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      border-radius: 2em;
+    }
+    th, td {
+      padding: 5px;
+      text-align: left;    
+      cursor: hand;
+    }
+  
+    .container{
+      height: 100%;
+      display: flex;
+      border-radius: 5px;
+      background-color: #f2f2f2;
+    }
+  
+    .left, .right{
+      width: 10%;
+    }
+    .center{
+      width: 80%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+  
+    .border-radius{
+      border-radius: 4px;
+    }
+  
+    input[type=text], select, textarea {
+      width: 65%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+      margin: 10px;
+    }
+  
+    label {
+      padding: 12px 12px 12px 0;
+      display: inline-block;
+      text-align: center;
+    }
+  
+  
+    .col-25 {
+      float: left;
+      width: 25%;
+      margin-top: 6px;
+    }
+    
+    .col-75 {
+      float: left;
+      width: 75%;
+      margin-top: 6px;
+    }
+  
+    input[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: right;
+      margin: 10px;
+    }
+    #editContainer{
+      width: 95%;
+      position: absolute;
+      padding: 20px;
+      background: #f2f2f2;
+      border: 1px solid #bfbfbf;
+      box-shadow: 10px 10px 5px #aaaaaa;
+      border-radius: 4px;
+    }
+    #eliminar{
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: left;
+      margin: 10px;
+    }
+    .onClick:hover{
+      color: blue;
+      cursor: pointer;
+    }

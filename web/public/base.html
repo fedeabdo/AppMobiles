@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="./css/base.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/base.js"></script>
+    <title>Mongo Server Ejercicio</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="left"></div>
+        <div class="center">
+            <form id="form" onsubmit="formSubmit()">
+                <label class="col-25" for="fname">Nombre: </label>
+                <input class="col-75 border-radius" type="text" name="fname" id="fname" placeholder="Tu nombre.."><br>
+                <label class="col-25" for="lname">Apellido: </label>
+                <input class="col-75 border-radius" type="text" name="lname" id="lname" placeholder="Tu apellido.."><br>
+                <label class="col-25" for="age">Edad: </label>
+                <input class="col-75 border-radius" type="text" name="age" id="age" placeholder="Tu edad.."><br>
+                <input id='bSubmit' type="submit" value="Agregar" style="clear: both;">
+            </form>
+            
+            <table id="table">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Edad</th>
+                    <th></th>
+                </tr>
+            </table>
+        </div>
+        <div id="editContainer">
+            <form id="formEdit" onsubmit="formEdit()">
+                
+                <button style="clear: both; float: right; background-color: red; border-radius:4px; margin-left: 100%;">X</button>
+                <label class="col-25" for="id">Id: </label>
+                <input class="col-75 border-radius" type="text" name="id" id="idEdit"><br>
+                    <label class="col-25" for="fnameEdit">Nombre: </label>
+                    <input class="col-75 border-radius" type="text" name="fname" id="fnameEdit"><br>
+                    <label class="col-25" for="lnameEdit">Apellido: </label>
+                <input class="col-75 border-radius" type="text" name="lname" id="lnameEdit"><br>
+                <label class="col-25" for="ageEdit">Edad: </label>
+                <input class="col-75 border-radius" type="text" name="age" id="ageEdit"><br>
+                <input id='bSubmit' type="submit" value="Editar" style="clear: both;">
+                <button id="eliminar" onclick="deletePerson()">Eliminar</button>
+            </form>
+        </div>
+        <div class="right"></div>
+
+    </div>
+</body>
+
+</html>
